@@ -244,6 +244,38 @@
     }
 
 
+    header .menu .item .sub_menu,
+    header .menu .item:hover .sub_menu
+    {
+        position: relative;
+        z-index: 1;
+        top: 0;
+
+        display: none;
+        visibility: hidden;
+
+        padding: 0;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    header .menu .item > a.touch_link + .sub_menu.show
+    {
+        display: block;
+        visibility: visible;
+    }
+
+    header .menu .sub_menu a
+    {
+        padding: 12px 20px 12px 32px;
+
+        text-align: left;
+    }
+
+
 
     /*-----------------
         Mob. header

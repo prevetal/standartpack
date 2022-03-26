@@ -125,6 +125,32 @@ $(() => {
 
 
 	if (is_touch_device()) {
+		// Подменю на тач скрине
+		$('header .menu .item > a.sub_link').addClass('touch_link')
+
+		$('header .menu .item > a.sub_link').click(function (e) {
+			const $dropdown = $(this).next()
+
+			if ($dropdown.css('visibility') === 'hidden') {
+				e.preventDefault()
+
+				$('header .menu .sub_menu').removeClass('show')
+				$dropdown.addClass('show')
+
+				$('body').css('cursor', 'pointer')
+			}
+		})
+
+		// Закрываем под. меню при клике за её пределами
+		$(document).click((e) => {
+			if ($(e.target).closest('.menu').length === 0) {
+				$('header .menu .sub_menu').removeClass('show')
+
+				$('body').css('cursor', 'default')
+			}
+		})
+
+
 		// Закрытие моб. меню свайпом справо на лево
 		let ts
 

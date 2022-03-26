@@ -789,6 +789,9 @@ button
 ------------*/
 header
 {
+    position: relative;
+    z-index: 9;
+
     margin-bottom: 24px;
 }
 
@@ -1200,7 +1203,6 @@ header .cart:hover .price
 header .menu
 {
     display: table;
-    overflow: hidden;
 
     width: 100%;
 
@@ -1243,6 +1245,7 @@ header .menu .item:hover + .item:before
 {
     height: 100%;
 }
+
 
 header .menu .item > a
 {
@@ -1317,6 +1320,105 @@ header .menu .item > a.active
     color: #f1a800;
 
     background: rgba(255,255,255,.1);
+}
+
+
+
+header .menu .sub_menu
+{
+    position: absolute;
+    z-index: -1;
+    top: calc(100% - 28px);
+    left: 0;
+
+    visibility: hidden;
+
+    min-width: 100%;
+    padding: 28px 0 0;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+    background: #151616;
+}
+
+header .menu .item:hover > a.touch_link + .sub_menu
+{
+    top: calc(100% - 28px);
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+header .menu .item:hover .sub_menu,
+header .menu .item > a.touch_link + .sub_menu.show
+{
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
+}
+
+
+header .menu .sub_menu > *
+{
+    position: relative;
+}
+
+header .menu .sub_menu > * + *
+{
+    margin-top: 1px;
+}
+
+header .menu .sub_menu > * + *:before
+{
+    position: absolute;
+    top: -1px;
+    right: 0;
+    left: 0;
+
+    display: block;
+
+    width: calc(100% - 20px);
+    height: 1px;
+    margin: auto;
+
+    content: '';
+
+    opacity: .2;
+    background: #fff;
+}
+
+
+header .menu .sub_menu a
+{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+
+    display: block;
+
+    padding: 16px;
+
+    transition: .2s linear;
+    text-align: center;
+    text-decoration: none;
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+header .menu .sub_menu a:hover,
+header .menu .sub_menu a.active
+{
+    color: var(--text_color);
+
+    background: #f1a800;
 }
 
 
