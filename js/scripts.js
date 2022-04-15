@@ -334,6 +334,54 @@ $(() => {
 	})
 
 
+	$('header .menu .item a.catalog_link').click((e) => {
+		e.preventDefault()
+
+		$('header .data').addClass('offset')
+	})
+
+	$('header .front2 a.sub_link').click(function (e) {
+		e.preventDefault()
+
+		let linkIndex = $(this).closest('.link').index()
+
+		$('header .front3 .links').hide()
+		$('header .front3 .links').eq(linkIndex).show()
+
+		$('header .data').addClass('offset2')
+	})
+
+	$('header .front3 a.sub_link').click(function (e) {
+		e.preventDefault()
+
+		let linkIndex = $(this).closest('.link').index()
+
+		$('header .front4 .links').hide()
+		$('header .front4 .links').eq(linkIndex).show()
+
+		$('header .data').addClass('offset3')
+	})
+
+
+	$('header .front2 .back_btn').click((e) => {
+		e.preventDefault()
+
+		$('header .data').removeClass('offset')
+	})
+
+	$('header .front3 .back_btn').click((e) => {
+		e.preventDefault()
+
+		$('header .data').removeClass('offset2')
+	})
+
+	$('header .front4 .back_btn').click((e) => {
+		e.preventDefault()
+
+		$('header .data').removeClass('offset3')
+	})
+
+
 	// Отправка форм
 	$('body').on('submit', 'form.custom_submit', function (e) {
 		e.preventDefault()

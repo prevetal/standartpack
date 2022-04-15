@@ -8,7 +8,8 @@
 }
 
 /* For IE */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none)
 {
     .supports_error
     {
@@ -102,7 +103,7 @@ input[type=number]
 :hover,
 :active
 {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
 }
 
@@ -199,7 +200,7 @@ body
     min-height: -webkit-fill-available;
     min-height:         fill-available;
 
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum'on, 'lnum'on;
 }
 
 
@@ -766,7 +767,7 @@ button
 --------------*/
 .fancybox__backdrop
 {
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, .6);
 }
 
 
@@ -845,9 +846,105 @@ header.show > .close
 }
 
 
+header .front2,
+header .front3,
+header .front4
+{
+    display: none;
+    overflow: auto;
+
+    width: 25%;
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height:         fill-available;
+}
+
+
+header .back_btn
+{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+
+    display: flex;
+
+    width: 100%;
+    padding: 15px 20px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .back_btn .icon
+{
+    display: block;
+
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+
+header .front3 .links,
+header .front4 .links
+{
+    display: none;
+}
+
+
+header .links .link
+{
+    border: 1px solid #e7e7e7;
+}
+
+header .links .link + .link
+{
+    margin-top: -1px;
+}
+
+
+header .links .link > a
+{
+    color: var(--text_color);
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 19px;
+
+    position: relative;
+
+    display: block;
+
+    padding: 15px 52px 15px 20px;
+
+    text-decoration: none;
+}
+
+header .links .link > a .icon
+{
+    position: absolute;
+    top: 0;
+    right: 16px;
+    bottom: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin: auto;
+
+    transition: transform .2s linear;
+    transform: rotate(180deg);
+    pointer-events: none;
+}
+
+
+
 header .top
 {
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 header .top .cont
@@ -920,8 +1017,8 @@ header .search
     margin-right: auto;
     margin-left: 109px;
 
-    border-right: 1px solid rgba(0,0,0,.1);
-    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    border-left: 1px solid rgba(0, 0, 0, .1);
 }
 
 header .search form
@@ -931,17 +1028,17 @@ header .search form
 
 header .search ::-webkit-input-placeholder
 {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
 
 header .search :-moz-placeholder
 {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
 
 header .search :-ms-input-placeholder
 {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
 
 header .search .icon
@@ -1319,7 +1416,7 @@ header .menu .item > a.active
 {
     color: #f1a800;
 
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, .1);
 }
 
 
@@ -1410,7 +1507,7 @@ header .menu .sub_menu a
     text-align: center;
     text-decoration: none;
 
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum'on, 'lnum'on;
 }
 
 header .menu .sub_menu a:hover,
@@ -1439,7 +1536,7 @@ header .menu .sub_menu a.active
     margin-bottom: 20px;
     padding: 12px 0;
 
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     background: rgba(196, 196, 196, .1);
 }
 
@@ -1528,17 +1625,17 @@ header .menu .sub_menu a.active
 
 .mob_header .search form ::-webkit-input-placeholder
 {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
 
 .mob_header .search form :-moz-placeholder
 {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
 
 .mob_header .search form :-ms-input-placeholder
 {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
 
 .mob_header .search form .icon
@@ -1907,7 +2004,7 @@ aside .links .sub_links
 
 aside .links .sub_links.level2 > * + *
 {
-    border-top: 1px solid rgba(0,0,0,.08);
+    border-top: 1px solid rgba(0, 0, 0, .08);
 }
 
 aside .links .sub_links.level2 > * > a
@@ -2425,7 +2522,7 @@ aside .filter .range .row
 
 aside .filter .range .input
 {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
     font-family: var(--font_family);
     font-size: var(--font_size);
     line-height: 16px;
@@ -2553,7 +2650,7 @@ aside .filter .reset_btn:hover
 
 .breadcrumbs
 {
-    color: rgba(0,0,0,.4);
+    color: rgba(0, 0, 0, .4);
     line-height: 16px;
 }
 
@@ -2652,7 +2749,7 @@ aside .filter .reset_btn:hover
     --form_focus_color: transparent;
     --form_error_color: red;
     --form_bg_color: transparent;
-    --form_placeholder_color: rgba(0,0,0,.5);
+    --form_placeholder_color: rgba(0, 0, 0, .5);
 }
 
 
@@ -2677,12 +2774,12 @@ aside .filter .reset_btn:hover
     width: 50%;
     margin-bottom: -1px;
 
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .form .columns > * + *
 {
-    border-left: 1px solid rgba(0,0,0,.1);
+    border-left: 1px solid rgba(0, 0, 0, .1);
 }
 
 
@@ -2809,7 +2906,7 @@ aside .filter .reset_btn:hover
 
 .form .agree
 {
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
     font-size: 9px;
     font-weight: 500;
     line-height: 13px;
@@ -3111,7 +3208,8 @@ aside .filter .reset_btn:hover
 
     border: 1px solid #e7e7e7;
     border-radius: 33px 0;
-    background: #f9f9f9;;
+    background: #f9f9f9;
+    ;
 }
 
 
@@ -4643,7 +4741,7 @@ aside .filter .reset_btn:hover
     --form_focus_color: #e1e1e1;
     --form_error_color: red;
     --form_bg_color: #fff;
-    --form_placeholder_color: rgba(0,0,0,.5);
+    --form_placeholder_color: rgba(0, 0, 0, .5);
 }
 
 
@@ -4837,17 +4935,17 @@ aside .filter .reset_btn:hover
 
 .checkout_info .step ::-webkit-input-placeholder
 {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
 
 .checkout_info .step :-moz-placeholder
 {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
 
 .checkout_info .step :-ms-input-placeholder
 {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
 
 
@@ -5775,7 +5873,7 @@ aside .filter .reset_btn:hover
 
 .category_info aside .links .level2
 {
-    border-top: 1px solid rgba(0,0,0,.08);
+    border-top: 1px solid rgba(0, 0, 0, .08);
 }
 
 
