@@ -222,6 +222,54 @@
 
 
 
+    header .menu .sub_catalog
+    {
+        padding: 48px 24px 24px;
+    }
+
+
+    header .menu .sub_catalog .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    header .menu .sub_catalog .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+    header .menu .sub_catalog .row > *.w2of4
+    {
+        width: calc(50% - 24px);
+    }
+
+    header .menu .sub_catalog .row > *.w3of4
+    {
+        width: calc(75% - 24px);
+    }
+
+    header .menu .sub_catalog .row > *.w4of4
+    {
+        width: calc(100% - 24px);
+    }
+
+
+    header .menu .sub_catalog .sub
+    {
+        margin-top: 12px;
+    }
+
+    header .menu .sub_catalog .cols .col > * + *,
+    header .menu .sub_catalog .sub > * + *
+    {
+        margin-top: 8px;
+    }
+
+
+
     /*-------------
         Sidebar
     -------------*/

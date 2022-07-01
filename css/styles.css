@@ -791,7 +791,7 @@ button
 header
 {
     position: relative;
-    z-index: 9;
+    z-index: 90;
 
     margin-bottom: 24px;
 }
@@ -1440,7 +1440,32 @@ header .menu .sub_menu
     background: #151616;
 }
 
-header .menu .item:hover > a.touch_link + .sub_menu
+
+header .menu .sub_catalog
+{
+    position: absolute;
+    z-index: -1;
+    top: calc(100% - 28px);
+    left: 0;
+
+    visibility: hidden;
+
+    width: 1224px;
+    max-width: calc(100vw - 48px);
+    padding: 57px 40px 40px;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: 33px 0;
+    background: #fff;
+    box-shadow: 0 4px 26px rgba(0, 0, 0, .1);
+}
+
+
+header .menu .item:hover > a.touch_link + .sub_menu,
+header .menu .item:hover > a.touch_link + .sub_catalog
 {
     top: calc(100% - 28px);
 
@@ -1452,7 +1477,9 @@ header .menu .item:hover > a.touch_link + .sub_menu
 }
 
 header .menu .item:hover .sub_menu,
-header .menu .item > a.touch_link + .sub_menu.show
+header .menu .item > a.touch_link + .sub_menu.show,
+header .menu .item:hover .sub_catalog,
+header .menu .item > a.touch_link + .sub_catalog.show
 {
     visibility: visible;
 
@@ -1516,6 +1543,168 @@ header .menu .sub_menu a.active
     color: var(--text_color);
 
     background: #f1a800;
+}
+
+
+
+header .menu .sub_catalog .row
+{
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
+
+header .menu .sub_catalog .row > *
+{
+    width: calc(25% - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+header .menu .sub_catalog .row > *.w2of4
+{
+    width: calc(50% - 30px);
+}
+
+header .menu .sub_catalog .row > *.w3of4
+{
+    width: calc(75% - 30px);
+}
+
+header .menu .sub_catalog .row > *.w4of4
+{
+    width: calc(100% - 30px);
+}
+
+
+header .menu .sub_catalog .main a
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+
+    display: flex;
+
+    transition: color .2s linear;
+    text-decoration: none;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .menu .sub_catalog .main .arr
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin: 5px 8px 5px 0;
+
+    transition: transform .2s linear;
+    transform: rotate(180deg);
+}
+
+header .menu .sub_catalog .main span
+{
+    width: calc(100% - 20px);
+}
+
+header .menu .sub_catalog .main a.active .arr
+{
+    transform: rotate(270deg);
+}
+
+
+header .menu .sub_catalog .sub
+{
+    display: none;
+
+    margin-top: 15px;
+    margin-left: 16px;
+}
+
+
+header .menu .sub_catalog .sub > * + *
+{
+    margin-top: 13px;
+}
+
+
+header .menu .sub_catalog .sub a
+{
+    color: #f15700;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+
+    display: flex;
+
+    transition: color .2s linear;
+    text-decoration: none;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .menu .sub_catalog .sub .arr
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin: 5px 8px 5px 0;
+
+    transition: transform .2s linear;
+    transform: rotate(180deg);
+}
+
+header .menu .sub_catalog .sub span
+{
+    width: calc(100% - 20px);
+}
+
+header .menu .sub_catalog .sub a.active .arr
+{
+    transform: rotate(270deg);
+}
+
+
+header .menu .sub_catalog .sub a:hover,
+header .menu .sub_catalog .sub a.active
+{
+    color: #000;
+}
+
+
+header .menu .sub_catalog .cols
+{
+    display: flex;
+
+    width: calc(100% + 48px);
+    margin-bottom: -13px;
+    margin-left: -48px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+header .menu .sub_catalog .cols .col
+{
+    width: calc(33.333% - 32px);
+    margin-bottom: 13px;
+    margin-left: 32px;
+}
+
+
+header .menu .sub_catalog .cols .col > * + *
+{
+    margin-top: 13px;
 }
 
 

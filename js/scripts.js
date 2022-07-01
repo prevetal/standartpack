@@ -413,6 +413,26 @@ $(() => {
 		$(this).toggleClass('active')
 		parent.find('.sub').slideToggle(300)
 	})
+
+
+	// Каталог шапка
+	$('header .menu .sub_catalog .main a.sub_link').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.item')
+
+		$(this).toggleClass('active')
+		parent.find('.sub').slideToggle(300)
+	})
+
+	$('header .menu .sub_catalog .sub a.sub_link').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('div')
+
+		$(this).toggleClass('active')
+		parent.find('.sub').slideToggle(300)
+	})
 })
 
 
