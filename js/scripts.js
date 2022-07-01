@@ -393,6 +393,15 @@ $(() => {
 			type: 'inline'
 		}])
 	})
+
+
+	// Теги
+	$('.tags .spoler_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+		$('.tags .hide').slideToggle(200)
+	})
 })
 
 
