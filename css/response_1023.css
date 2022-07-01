@@ -977,6 +977,37 @@
 
 
 
+    /*------------------
+        Catalog info
+    ------------------*/
+    .catalog_info
+    {
+        padding-bottom: 24px;
+    }
+
+
+    .catalog_info .row
+    {
+        margin-bottom: -32px;
+        margin-left: -32px;
+    }
+
+    .catalog_info .row > *
+    {
+        width: calc(50% - 32px);
+        margin-bottom: 32px;
+        margin-left: 32px;
+    }
+
+
+    .catalog_info .category .main
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

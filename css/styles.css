@@ -6536,6 +6536,177 @@ aside .filter .reset_btn:hover
 
 
 
+/*------------------
+    Catalog info
+------------------*/
+.catalog_info
+{
+    padding-bottom: 52px;
+}
+
+
+.catalog_info .row
+{
+    margin-bottom: -60px;
+    margin-left: -40px;
+}
+
+.catalog_info .row > *
+{
+    width: calc(33.333% - 40px);
+    margin-bottom: 60px;
+    margin-left: 40px;
+}
+
+
+.catalog_info .category
+{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.catalog_info .category .icon
+{
+    display: flex;
+
+    width: 58px;
+    height: 78px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.catalog_info .category .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.catalog_info .category .icon + *
+{
+    width: calc(100% - 68px);
+    padding-top: 27px;
+}
+
+
+.catalog_info .category .main
+{
+    color: #f15700;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23px;
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+
+.catalog_info .category .main a
+{
+    color: currentColor;
+
+    display: flex;
+
+    transition: color .2s linear;
+    text-decoration: none;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.catalog_info .category .main a span
+{
+    width: calc(100% - 20px);
+}
+
+
+.catalog_info .category .main .arr
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin: 5px 8px 5px 0;
+
+    transform: rotate(180deg);
+}
+
+
+.catalog_info .category .main a:hover,
+.catalog_info .category .main a.active
+{
+    color: #000;
+}
+
+
+.catalog_info .category .sub
+{
+    display: none;
+
+    margin-top: 17px;
+    margin-left: 20px;
+}
+
+
+.catalog_info .category .sub > * + *
+{
+    margin-top: 13px;
+}
+
+
+.catalog_info .category .sub a
+{
+    color: #f15700;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+
+    display: flex;
+
+    transition: color .2s linear;
+    text-decoration: none;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.catalog_info .category .sub .arr
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+    margin: 5px 8px 5px 0;
+
+    transform: rotate(180deg);
+}
+
+.catalog_info .category .sub span
+{
+    width: calc(100% - 20px);
+}
+
+
+.catalog_info .category .sub a:hover
+{
+    color: #000;
+}
+
+
+
 /*------------
     Footer
 ------------*/

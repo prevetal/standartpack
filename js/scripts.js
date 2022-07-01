@@ -402,6 +402,17 @@ $(() => {
 		$(this).toggleClass('active')
 		$('.tags .hide').slideToggle(200)
 	})
+
+
+	// Каталог
+	$('.catalog_info .category .main a.sub_link').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.category')
+
+		$(this).toggleClass('active')
+		parent.find('.sub').slideToggle(300)
+	})
 })
 
 

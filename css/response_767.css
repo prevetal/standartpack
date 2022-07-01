@@ -1,4 +1,5 @@
-@media print, (max-width: 767px)
+@media print,
+(max-width: 767px)
 {
     /*-------------------
         Global styles
@@ -7,6 +8,7 @@
     {
         padding: 0 20px;
     }
+
     .swiper-container-horizontal > .swiper-pagination-bullets,
     .swiper-pagination-custom,
     .swiper-pagination-fraction
@@ -910,6 +912,38 @@
     .advantages .row > *
     {
         width: calc(33.333% - 24px);
+    }
+
+
+
+    /*------------------
+        Catalog info
+    ------------------*/
+    .catalog_info
+    {
+        padding-bottom: 0;
+    }
+
+
+    .catalog_info .row
+    {
+        margin-bottom: -4px;
+        margin-left: 0;
+    }
+
+    .catalog_info .row > *
+    {
+        width: 100%;
+        margin-bottom: 4px;
+        margin-left: 0;
+    }
+
+
+
+    .catalog_info .category .sub
+    {
+        margin-top: 12px;
+        margin-bottom: 12px;
     }
 
 
