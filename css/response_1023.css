@@ -317,6 +317,14 @@
     }
 
 
+    header .menu .sub_catalog,
+    header .menu .item:hover .sub_catalog,
+    header .menu .item > a.touch_link + .sub_catalog.show
+    {
+        display: none;
+    }
+
+
     header .data.offset
     {
         transform: translateX(-25%);
