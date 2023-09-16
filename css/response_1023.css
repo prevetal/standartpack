@@ -1016,6 +1016,22 @@
 
 
 
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 15px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

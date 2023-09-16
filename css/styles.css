@@ -6896,6 +6896,101 @@ aside .filter .reset_btn:hover
 
 
 
+/*--------------
+    Articles
+--------------*/
+.articles .row
+{
+    margin-bottom: -50px;
+    margin-left: -33px;
+}
+
+.articles .row > *
+{
+    width: calc(33.333% - 33px);
+    margin-bottom: 50px;
+    margin-left: 33px;
+}
+
+
+.articles .article .thumb
+{
+    color: currentColor;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin-bottom: 20px;
+    padding-bottom: 70.466%;
+
+    text-decoration: none;
+
+    border-radius: 34px 0;
+    background: #ddd;
+}
+
+.articles .article .thumb img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 34px 0;
+
+    object-fit: cover;
+}
+
+
+.articles .article .date
+{
+    color: #4f4f4f;
+    font-size: 14px;
+
+    margin-bottom: 14px;
+}
+
+
+.articles .article .name
+{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 133%;
+}
+
+
+.articles .article .name a
+{
+    color: currentColor;
+
+    display: inline-block;
+
+    transition: color .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+
+.articles .article .thumb:hover ~ .name a,
+.articles .article .name a:hover
+{
+    color: #f15700;
+}
+
+
+.articles .pagination
+{
+    margin-top: 50px;
+}
+
+
+
 /*------------
     Footer
 ------------*/
