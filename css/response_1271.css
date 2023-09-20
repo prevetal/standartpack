@@ -545,35 +545,40 @@
     /*----------------
         Typography
     ----------------*/
-    .text_block h1
+    .text_block
     {
-        font-size: 32px;
-        line-height: calc(100% + 8px);
-
-        margin-bottom: 28px;
+        font-size: 16px;
     }
+
+
+    .text_block > *,
+    .text_block .cols .col > *,
+    .text_block .block_with_image div > *,
+    .text_block .bg > *
+    {
+        margin-bottom: 24px;
+    }
+
 
     .text_block h2
     {
-        font-size: 25px;
-        line-height: calc(100% + 8px);
+        font-size: 32px;
 
-        margin-bottom: 20px;
+        margin-bottom: 24px !important;
     }
 
     .text_block h3
     {
-        font-size: 21px;
-        line-height: calc(100% + 8px);
+        font-size: 24px;
 
-        margin-bottom: 20px;
+        margin-bottom: 24px !important;
     }
 
 
     .text_block * + h2,
     .text_block * + h3
     {
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
 
@@ -597,6 +602,22 @@
     }
 
 
+    .text_block figure
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+
+    .text_block figure figcaption
+    {
+        font-size: 14px;
+
+        margin-top: 16px;
+        padding-bottom: 15px;
+    }
+
+
     .text_block .cols
     {
         margin-top: 52px;
@@ -609,11 +630,15 @@
     }
 
 
-    .text_block .big,
-    .text_block ol li,
-    .text_block ul li
+    .text_block .big
     {
         font-size: 15px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 7px;
     }
 
 
@@ -1665,6 +1690,209 @@
     .articles .pagination
     {
         margin-top: 40px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        padding-top: 40px;
+        padding-bottom: 24px;
+
+        --sidebar_width: 280px;
+    }
+
+
+    .article_info .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .article_info .head .time
+    {
+        margin-left: 28px;
+    }
+
+    .article_info .head .time .icon
+    {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+
+
+    .article_info .head .title
+    {
+        font-size: 40px;
+
+        margin-top: 28px;
+    }
+
+
+    .article_info .head .desc
+    {
+        font-size: 18px;
+
+        width: 652px;
+        margin-top: 28px;
+    }
+
+
+    .article_info .head .image
+    {
+        margin-top: 40px;
+    }
+
+
+    .article_info .head .image,
+    .article_info .head .image img
+    {
+        border-radius: 0 28px;
+    }
+
+
+
+    .article_info .anchors
+    {
+        padding: 24px;
+
+        border-radius: 0 28px;
+    }
+
+
+    .article_info .anchors .title
+    {
+        font-size: 16px;
+    }
+
+
+    .article_info .anchors .items > * + *
+    {
+        margin-top: 16px;
+    }
+
+    .article_info .anchors .items .btn
+    {
+        font-size: 14px;
+    }
+
+
+
+    .article_info .bottom
+    {
+        margin-top: 60px;
+        padding-top: 30px;
+
+        border-width: 2px;
+    }
+
+
+    .article_info .author
+    {
+        font-size: 15px;
+    }
+
+
+    .article_info .share .label
+    {
+        font-size: 15px;
+
+        margin-right: 12px;
+    }
+
+
+    .article_info .share .socials a + a
+    {
+        margin-left: 12px;
+    }
+
+    .article_info .share .socials a
+    {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .article_info .share .socials .icon
+    {
+        transform: scale(.9);
+    }
+
+
+    .article_info .tags
+    {
+        margin-top: 32px;
+        padding-top: 23px;
+    }
+
+
+    .article_info .tags .row
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .article_info .tags .row > *
+    {
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+
+
+    .article_info .rate
+    {
+        margin-top: 60px;
+        padding: 40px;
+
+        border-radius: 0 28px;
+    }
+
+
+    .article_info .rate .title
+    {
+        font-size: 20px;
+    }
+
+
+    .article_info .rate .value
+    {
+        margin-top: 20px;
+    }
+
+    .article_info .rate .value .row > div + div,
+    .article_info .rate .value .row label ~ label
+    {
+        margin-right: 16px;
+    }
+
+
+    .article_info .rate .exp
+    {
+        font-size: 15px;
+
+        margin-top: 24px;
+    }
+
+
+
+    .article_info .mistake
+    {
+        font-size: 15px;
+
+        margin-top: 60px;
+        padding: 24px 48px;
+
+        border-radius: 0 28px;
+    }
+
+    .article_info .mistake .label + *
+    {
+        width: calc(100% - 180px);
     }
 
 

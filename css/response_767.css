@@ -197,32 +197,14 @@
     /*----------------
         Typography
     ----------------*/
-    .text_block h1
-    {
-        font-size: 24px;
-
-        margin-bottom: 20px;
-    }
-
     .text_block h2
     {
-        font-size: 21px;
-
-        margin-bottom: 16px;
+        font-size: 24px;
     }
 
     .text_block h3
     {
         font-size: 18px;
-
-        margin-bottom: 12px;
-    }
-
-
-    .text_block * + h2,
-    .text_block * + h3
-    {
-        margin-top: 40px;
     }
 
 
@@ -232,18 +214,9 @@
     }
 
 
-    .text_block .big,
-    .text_block ol li,
-    .text_block ul li
+    .text_block .big
     {
         font-size: 14px;
-    }
-
-
-    .text_block ol li + li,
-    .text_block ul li + li
-    {
-        margin-top: 8px;
     }
 
 
@@ -966,6 +939,74 @@
     .articles .article .name
     {
         font-size: 16px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+
+    .article_info .head .title
+    {
+        font-size: 32px;
+    }
+
+
+    .article_info .head .desc
+    {
+        font-size: 16px;
+
+        width: 600px;
+    }
+
+
+
+    .article_info .bottom
+    {
+        display: block;
+    }
+
+
+    .article_info .share
+    {
+        margin-top: 20px;
+        margin-left: 68px;
+    }
+
+
+
+    .article_info .rate
+    {
+        padding: 40px 24px;
+    }
+
+
+    .article_info .rate .title
+    {
+        font-size: 18px;
+    }
+
+
+    .article_info .rate .value .row > div + div,
+    .article_info .rate .value .row label ~ label
+    {
+        margin-right: 12px;
+    }
+
+
+    .article_info .rate .exp
+    {
+        font-size: 13px;
+
+        margin-top: 20px;
+    }
+
+
+
+    .article_info .mistake .label + *
+    {
+        width: calc(100% - 116px);
     }
 
 

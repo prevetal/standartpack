@@ -433,6 +433,35 @@ $(() => {
 		$(this).toggleClass('active')
 		parent.find('.sub').slideToggle(300)
 	})
+
+
+	// Плавная прокрутка к якорю
+	const scrollBtns = document.querySelectorAll('.scroll_btn')
+
+	if (scrollBtns) {
+		scrollBtns.forEach(element => {
+			element.addEventListener('click', e => {
+				e.preventDefault()
+
+				let anchor = element.getAttribute('data-anchor')
+
+				document.getElementById(anchor).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				}, 1000)
+
+				$('.article_info .anchors').removeClass('show')
+			})
+		})
+	}
+
+
+	// Моб. содержимое
+	$('.article_info .anchors .title').click(function(e) {
+		e.preventDefault()
+
+		$('.article_info .anchors').toggleClass('show')
+	})
 })
 
 
